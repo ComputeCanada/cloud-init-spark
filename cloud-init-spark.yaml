@@ -5,7 +5,7 @@ packages:
   - git
   - default-jre
 runcmd:
-  - echo -n "127.0.1.1 ">>/etc/hosts
+  - echo -n `hostname -I`" ">>/etc/hosts
   - cat /etc/hostname>>/etc/hosts
   - ["cd","/tmp"]
   - ["git","clone","https://github.com/cgeroux/cloud-init-spark.git"]
