@@ -4,6 +4,8 @@ package_upgrade: false
 packages:
   - git
   - default-jre
+  - python3-pandas
+  - python3-matplotlib
 runcmd:
   - echo -n `hostname -I`" ">>/etc/hosts
   - cat /etc/hostname>>/etc/hosts
